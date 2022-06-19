@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "scripts": {
+    "cdktg": "cdktg",
+    "synth": "cdktg synth threagile.py",
+    "ping": "cdktg ping",
+    "model:check": "cdktg check",
+    "model:analyse": "cdktg analyse"
+  },
+  "devDependencies": {
+    "cdktg": "^0.0.13"
+  }
+}

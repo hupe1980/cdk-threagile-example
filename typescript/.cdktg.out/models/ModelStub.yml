@@ -13,7 +13,7 @@ tags_available:
   - some-other-tag
 data_assets:
   Some Data Asset:
-    id: e10c3ceb-cdcc-43dd-9d45-df8577806c72
+    id: 59e75104-dbbf-41a6-a2fe-53e755068fc3
     description: Some Description
     usage: business
     tags: []
@@ -26,7 +26,7 @@ data_assets:
     justification_cia_rating: null
 technical_assets:
   Some Technical Asset:
-    id: 40ab1313-a719-43a1-854a-a7571324833b
+    id: a6055167-3436-4e3d-a6ef-18ad6087285e
     description: Some Description
     type: process
     usage: business
@@ -49,11 +49,11 @@ technical_assets:
     multitenant: false
     redundant: true
     data_assets_processed:
-      - e10c3ceb-cdcc-43dd-9d45-df8577806c72
+      - 59e75104-dbbf-41a6-a2fe-53e755068fc3
     data_assets_stored: []
     communication_links:
       Some Traffic:
-        target: d9a5d4cf-b764-4b86-b736-f93622c30265
+        target: 2d2a2a01-3c28-4d53-beec-796b338e3a7f
         description: Some Description
         protocol: https
         authentication: none
@@ -63,10 +63,10 @@ technical_assets:
         readonly: false
         usage: business
         data_assets_sent:
-          - e10c3ceb-cdcc-43dd-9d45-df8577806c72
+          - 59e75104-dbbf-41a6-a2fe-53e755068fc3
         data_assets_received: []
   Some Other Technical Asset:
-    id: d9a5d4cf-b764-4b86-b736-f93622c30265
+    id: 2d2a2a01-3c28-4d53-beec-796b338e3a7f
     description: Some Description
     type: process
     usage: business
@@ -87,22 +87,22 @@ technical_assets:
     multitenant: false
     redundant: true
     data_assets_processed:
-      - e10c3ceb-cdcc-43dd-9d45-df8577806c72
+      - 59e75104-dbbf-41a6-a2fe-53e755068fc3
     data_assets_stored: []
 trust_boundaries:
   Some Trust Boundary:
-    id: 9e9b02fc-6cc8-472b-9d69-1aec1ce33508
+    id: 387f75c3-b0f9-4670-a6f0-84feeeb96f08
     description: Some Description
     type: network-dedicated-hoster
     tags: []
     technical_assets_inside:
-      - 40ab1313-a719-43a1-854a-a7571324833b
+      - a6055167-3436-4e3d-a6ef-18ad6087285e
     trust_boundaries_nested: []
 shared_runtimes:
   Some Shared Runtime:
-    id: a1e6093d-291a-4617-9c3a-e8687d95f222
+    id: b7ca76d5-65d7-445c-bc17-7b45df469906
     description: Some Description
     tags: []
     technical_assets_running:
-      - 40ab1313-a719-43a1-854a-a7571324833b
-      - d9a5d4cf-b764-4b86-b736-f93622c30265
+      - a6055167-3436-4e3d-a6ef-18ad6087285e
+      - 2d2a2a01-3c28-4d53-beec-796b338e3a7f

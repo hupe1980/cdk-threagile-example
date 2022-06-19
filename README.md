@@ -1,3 +1,3 @@
-# cdk-threagile-example
+# cdk-threagile-examples
 
-The example can be used with the [threagile playground](https://run.threagile.io/)
+The examples can be used with the [threagile playground](https://run.threagile.io/)

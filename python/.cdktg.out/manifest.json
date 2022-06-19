@@ -1,0 +1,13 @@
+{
+    "version": "0.0.13",
+    "models": {
+        "Model Stub": {
+            "name": "Model Stub",
+            "sanitizedName": "ModelStub",
+            "constructPath": "Model Stub",
+            "workingDirectory": "models",
+            "synthesizedModelPath": "models/ModelStub.yml",
+            "annotations": []
+        }
+    }
+}

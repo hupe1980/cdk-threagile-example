@@ -1,21 +1,14 @@
 {
-  "name": "cdk-threagile-example",
   "private": true,
-  "version": "1.0.0",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/hupe1980/cdk-threagile-example.git"
-  },
   "scripts": {
     "cdktg": "cdktg",
-    "synth": "cdktg synth src/main.ts",
+    "synth": "cdktg synth threagile.ts",
     "ping": "cdktg ping",
     "model:check": "cdktg check",
     "model:analyse": "cdktg analyse"
   },
   "dependencies": {
-    "cdktg": "^0.0.12",
+    "cdktg": "^0.0.13",
     "constructs": "^10.1.42"
   },
   "devDependencies": {
