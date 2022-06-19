@@ -50,7 +50,7 @@ const someTechnicalAsset = new cdktg.TechnicalAsset(model, 'Some Technical Asset
   redundant: true,
 });
 
-someTechnicalAsset.processed(someData);
+someTechnicalAsset.process(someData);
 
 const someOtherTechnicalAsset = new cdktg.TechnicalAsset(model, 'Some Other Technical Asset', {
   description: 'Some Description',
@@ -72,9 +72,9 @@ const someOtherTechnicalAsset = new cdktg.TechnicalAsset(model, 'Some Other Tech
   redundant: true,
 });
 
-someOtherTechnicalAsset.processed(someData);
+someOtherTechnicalAsset.process(someData);
 
-const someTraffic = someTechnicalAsset.communicatedWith('Some Traffic', someOtherTechnicalAsset, {
+const someTraffic = someTechnicalAsset.communicateWith('Some Traffic', someOtherTechnicalAsset, {
   description: 'Some Description',
   protocol: cdktg.Protocol.HTTPS,
   authentication: cdktg.Authentication.NONE,
@@ -84,5 +84,7 @@ const someTraffic = someTechnicalAsset.communicatedWith('Some Traffic', someOthe
   readonly: false,
   usage: cdktg.Usage.BUSINESS,
 });
+
+someTraffic.send(someData);
 
 project.synth();

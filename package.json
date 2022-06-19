@@ -15,7 +15,7 @@
     "model:analyse": "cdktg analyse"
   },
   "dependencies": {
-    "cdktg": "latest",
+    "cdktg": "^0.0.11",
     "constructs": "^10.1.42"
   },
   "devDependencies": {
