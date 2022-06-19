@@ -6,12 +6,17 @@ data: 2020-03-31
 author:
   name: John Doe
   homepage: null
+management_summary_comment: null
 business_criticality: important
+tags_available:
+  - some-tag
+  - some-other-tag
 data_assets:
   Some Data Asset:
-    id: c3976643-942b-4fe1-aebb-a6a0e6879cf6
+    id: e10c3ceb-cdcc-43dd-9d45-df8577806c72
     description: Some Description
     usage: business
+    tags: []
     origin: Some Origin
     owner: Some Owner
     quantity: many
@@ -21,7 +26,7 @@ data_assets:
     justification_cia_rating: null
 technical_assets:
   Some Technical Asset:
-    id: dc9acb35-1218-4007-b777-6affeafa42ee
+    id: 40ab1313-a719-43a1-854a-a7571324833b
     description: Some Description
     type: process
     usage: business
@@ -30,6 +35,9 @@ technical_assets:
     justification_out_of_scope: null
     size: component
     technology: web-service-rest
+    tags:
+      - some-tag
+      - some-other-tag
     internet: false
     machine: virtual
     encryption: none
@@ -41,11 +49,11 @@ technical_assets:
     multitenant: false
     redundant: true
     data_assets_processed:
-      - c3976643-942b-4fe1-aebb-a6a0e6879cf6
+      - e10c3ceb-cdcc-43dd-9d45-df8577806c72
     data_assets_stored: []
     communication_links:
       Some Traffic:
-        target: 441e289d-73f0-4a00-ae53-687be7287540
+        target: d9a5d4cf-b764-4b86-b736-f93622c30265
         description: Some Description
         protocol: https
         authentication: none
@@ -55,10 +63,10 @@ technical_assets:
         readonly: false
         usage: business
         data_assets_sent:
-          - c3976643-942b-4fe1-aebb-a6a0e6879cf6
+          - e10c3ceb-cdcc-43dd-9d45-df8577806c72
         data_assets_received: []
   Some Other Technical Asset:
-    id: 441e289d-73f0-4a00-ae53-687be7287540
+    id: d9a5d4cf-b764-4b86-b736-f93622c30265
     description: Some Description
     type: process
     usage: business
@@ -67,6 +75,7 @@ technical_assets:
     justification_out_of_scope: null
     size: component
     technology: web-service-rest
+    tags: []
     internet: false
     machine: virtual
     encryption: none
@@ -78,13 +87,22 @@ technical_assets:
     multitenant: false
     redundant: true
     data_assets_processed:
-      - c3976643-942b-4fe1-aebb-a6a0e6879cf6
+      - e10c3ceb-cdcc-43dd-9d45-df8577806c72
     data_assets_stored: []
 trust_boundaries:
   Some Trust Boundary:
-    id: 406c7be2-5aa7-48d2-aeb6-d105d3510dc5
+    id: 9e9b02fc-6cc8-472b-9d69-1aec1ce33508
     description: Some Description
     type: network-dedicated-hoster
+    tags: []
     technical_assets_inside:
-      - dc9acb35-1218-4007-b777-6affeafa42ee
+      - 40ab1313-a719-43a1-854a-a7571324833b
     trust_boundaries_nested: []
+shared_runtimes:
+  Some Shared Runtime:
+    id: a1e6093d-291a-4617-9c3a-e8687d95f222
+    description: Some Description
+    tags: []
+    technical_assets_running:
+      - 40ab1313-a719-43a1-854a-a7571324833b
+      - d9a5d4cf-b764-4b86-b736-f93622c30265

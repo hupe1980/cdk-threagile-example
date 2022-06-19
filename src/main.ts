@@ -32,11 +32,12 @@ const someTrustBoundary = new cdktg.TrustBoundary(model, 'Some Trust Boundary', 
 const someTechnicalAsset = new cdktg.TechnicalAsset(model, 'Some Technical Asset', {
   trustBoundary: someTrustBoundary,
   description: 'Some Description',
-  assetType: cdktg.AssetType.PROCESS,
+  type: cdktg.TechnicalAssetType.PROCESS,
   usage: cdktg.Usage.BUSINESS,
   humanUse: false,
   size: cdktg.Size.COMPONENT,
   technology: cdktg.Technology.WEB_SERVICE_REST,
+  tags: ["some-tag", "some-other-tag"],
   internet: false,
   machine: cdktg.Machine.VIRTUAL,
   encryption: cdktg.Encryption.NONE,
@@ -54,7 +55,7 @@ someTechnicalAsset.process(someData);
 
 const someOtherTechnicalAsset = new cdktg.TechnicalAsset(model, 'Some Other Technical Asset', {
   description: 'Some Description',
-  assetType: cdktg.AssetType.PROCESS,
+  type: cdktg.TechnicalAssetType.PROCESS,
   usage: cdktg.Usage.BUSINESS,
   humanUse: false,
   size: cdktg.Size.COMPONENT,
@@ -86,5 +87,12 @@ const someTraffic = someTechnicalAsset.communicateWith('Some Traffic', someOther
 });
 
 someTraffic.send(someData);
+
+
+const someSharedRuntime = new cdktg.SharedRuntime(model, "Some Shared Runtime", {
+  description: "Some Description",
+});
+
+someSharedRuntime.run(someTechnicalAsset, someOtherTechnicalAsset);
 
 project.synth();
