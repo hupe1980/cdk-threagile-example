@@ -92,10 +92,10 @@ axios@^0.27.2:
     follow-redirects "^1.14.9"
     form-data "^4.0.0"
 
-cdktg@^0.0.13:
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/cdktg/-/cdktg-0.0.13.tgz#697ad40beb2fbea6384a6f20b8c3e8b93b06b979"
-  integrity sha512-gMdmKc2M1KUdpmAPby8+VLeLAx4Zy3HMeP4lLAcZnEZuoeKvLYRgBE5yIQGSWXh5YQ3yWj2sfyJSZ3jx7e3coQ==
+cdktg@^0.0.15:
+  version "0.0.15"
+  resolved "https://registry.yarnpkg.com/cdktg/-/cdktg-0.0.15.tgz#7864ba69a359c28ea99b4d19d69a12c052be8f86"
+  integrity sha512-T0908IXY1EVtSlQicmEkdnG3yCIvtkJffpF5fBUt+7QzdZQ3qPGdoaLOFeSC4Xh+BYXEym34sS24Mii1eTMjog==
   dependencies:
     adm-zip "0.5.6"
     axios "^0.27.2"
@@ -104,7 +104,6 @@ cdktg@^0.0.13:
     form-data "^4.0.0"
     fs-extra "^10.1.0"
     ts-node "^10.8.1"
-    uuid "^8.3.2"
     which "^2.0.2"
     yaml "^2.1.1"
     yargs "^17.5.1"
@@ -370,11 +369,6 @@ universalify@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/universalify/-/universalify-2.0.0.tgz#75a4984efedc4b08975c5aeb73f530d02df25717"
   integrity sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==
-
-uuid@^8.3.2:
-  version "8.3.2"
-  resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
-  integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
 
 v8-compile-cache-lib@^3.0.1:
   version "3.0.1"
