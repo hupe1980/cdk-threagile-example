@@ -8,12 +8,15 @@ author:
   homepage: null
 management_summary_comment: null
 business_criticality: important
+questions: {}
+abuse_cases: {}
+security_requirements: {}
 tags_available:
   - some-tag
   - some-other-tag
 data_assets:
   Some Data Asset:
-    id: 8dc2b2c9-6c34-42e7-bac3-9257f47732e8
+    id: some-data-asset
     description: Some Description
     usage: business
     tags: []
@@ -26,7 +29,7 @@ data_assets:
     justification_cia_rating: null
 technical_assets:
   Some Technical Asset:
-    id: 3f85069d-3a1a-4add-93f3-eefa5dfcc2b5
+    id: some-technical-asset
     description: Some Description
     type: process
     usage: business
@@ -48,12 +51,14 @@ technical_assets:
     justification_cia_rating: null
     multitenant: false
     redundant: true
+    custom_developed_parts: false
     data_assets_processed:
-      - 8dc2b2c9-6c34-42e7-bac3-9257f47732e8
+      - some-data-asset
     data_assets_stored: []
+    data_formats_accepted: null
     communication_links:
       Some Traffic:
-        target: 8cc02fef-e52e-47c4-abea-566a3038bfdf
+        target: some-other-technical-asset
         description: Some Description
         protocol: https
         authentication: none
@@ -63,10 +68,10 @@ technical_assets:
         readonly: false
         usage: business
         data_assets_sent:
-          - 8dc2b2c9-6c34-42e7-bac3-9257f47732e8
+          - some-data-asset
         data_assets_received: []
   Some Other Technical Asset:
-    id: 8cc02fef-e52e-47c4-abea-566a3038bfdf
+    id: some-other-technical-asset
     description: Some Description
     type: process
     usage: business
@@ -86,23 +91,27 @@ technical_assets:
     justification_cia_rating: null
     multitenant: false
     redundant: true
+    custom_developed_parts: false
     data_assets_processed:
-      - 8dc2b2c9-6c34-42e7-bac3-9257f47732e8
+      - some-data-asset
     data_assets_stored: []
+    data_formats_accepted: null
+    communication_links: {}
 trust_boundaries:
   Some Trust Boundary:
-    id: 08b375ba-5bf3-47ae-bfaf-ffac1cb292ee
+    id: some-trust-boundary
     description: Some Description
     type: network-dedicated-hoster
     tags: []
     technical_assets_inside:
-      - 3f85069d-3a1a-4add-93f3-eefa5dfcc2b5
+      - some-technical-asset
     trust_boundaries_nested: []
 shared_runtimes:
   Some Shared Runtime:
-    id: 082c4fd2-e180-49a3-b633-e23bdbe1e70b
+    id: some-shared-runtime
     description: Some Description
     tags: []
     technical_assets_running:
-      - 3f85069d-3a1a-4add-93f3-eefa5dfcc2b5
-      - 8cc02fef-e52e-47c4-abea-566a3038bfdf
+      - some-technical-asset
+      - some-other-technical-asset
+individual_risk_categories: {}

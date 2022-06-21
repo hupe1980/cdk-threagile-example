@@ -43,7 +43,7 @@ some_technical_asset = cdktg.TechnicalAsset(model, 'Some Technical Asset',
     multi_tenant=False,
     redundant=True)
 
-some_technical_asset.process(some_data)
+some_technical_asset.processes(some_data)
 
 some_other_technical_asset = cdktg.TechnicalAsset(model, 'Some Other Technical Asset',
     description='Some Description',
@@ -63,9 +63,9 @@ some_other_technical_asset = cdktg.TechnicalAsset(model, 'Some Other Technical A
     multi_tenant=False,
     redundant=True)
 
-some_other_technical_asset.process(some_data)
+some_other_technical_asset.processes(some_data)
 
-some_traffic = some_technical_asset.communicate_with('Some Traffic', some_other_technical_asset,
+some_traffic = some_technical_asset.communicates_with('Some Traffic', some_other_technical_asset,
     description='Some Description',
     protocol=cdktg.Protocol.HTTPS,
     authentication=cdktg.Authentication.NONE,
@@ -75,11 +75,11 @@ some_traffic = some_technical_asset.communicate_with('Some Traffic', some_other_
     readonly=False,
     usage=cdktg.Usage.BUSINESS)
 
-some_traffic.send(some_data)
+some_traffic.sends(some_data)
 
 some_shared_runtime = cdktg.SharedRuntime(model, 'Some Shared Runtime',
     description='Some Description')
 
-some_shared_runtime.run(some_technical_asset, some_other_technical_asset)
+some_shared_runtime.runs(some_technical_asset, some_other_technical_asset)
 
 project.synth()

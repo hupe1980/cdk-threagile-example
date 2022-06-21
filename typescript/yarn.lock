@@ -92,10 +92,10 @@ axios@^0.27.2:
     follow-redirects "^1.14.9"
     form-data "^4.0.0"
 
-cdktg@^0.0.15:
-  version "0.0.15"
-  resolved "https://registry.yarnpkg.com/cdktg/-/cdktg-0.0.15.tgz#7864ba69a359c28ea99b4d19d69a12c052be8f86"
-  integrity sha512-T0908IXY1EVtSlQicmEkdnG3yCIvtkJffpF5fBUt+7QzdZQ3qPGdoaLOFeSC4Xh+BYXEym34sS24Mii1eTMjog==
+cdktg@^0.0.18:
+  version "0.0.18"
+  resolved "https://registry.yarnpkg.com/cdktg/-/cdktg-0.0.18.tgz#c8b9f714c6e034fdfb3140d3d99f91a28e0b2c7d"
+  integrity sha512-apnxeBmVrWPXGaEsrcAZfX0lpd6MDRp+gSM/9MNIZomD7KEr1XmV/7R1VKwit/LIkJbHy+btrpZEtqanSRP2MA==
   dependencies:
     adm-zip "0.5.6"
     axios "^0.27.2"

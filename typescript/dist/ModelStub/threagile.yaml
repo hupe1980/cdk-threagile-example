@@ -6,12 +6,20 @@ data: 2020-03-31
 author:
   name: John Doe
   homepage: null
+management_summary_comment: null
 business_criticality: important
+questions: {}
+abuse_cases: {}
+security_requirements: {}
+tags_available:
+  - some-tag
+  - some-other-tag
 data_assets:
   Some Data Asset:
-    id: c3976643-942b-4fe1-aebb-a6a0e6879cf6
+    id: some-data-asset
     description: Some Description
     usage: business
+    tags: []
     origin: Some Origin
     owner: Some Owner
     quantity: many
@@ -21,7 +29,7 @@ data_assets:
     justification_cia_rating: null
 technical_assets:
   Some Technical Asset:
-    id: dc9acb35-1218-4007-b777-6affeafa42ee
+    id: some-technical-asset
     description: Some Description
     type: process
     usage: business
@@ -30,6 +38,9 @@ technical_assets:
     justification_out_of_scope: null
     size: component
     technology: web-service-rest
+    tags:
+      - some-tag
+      - some-other-tag
     internet: false
     machine: virtual
     encryption: none
@@ -40,12 +51,14 @@ technical_assets:
     justification_cia_rating: null
     multitenant: false
     redundant: true
+    custom_developed_parts: false
     data_assets_processed:
-      - c3976643-942b-4fe1-aebb-a6a0e6879cf6
+      - some-data-asset
     data_assets_stored: []
+    data_formats_accepted: null
     communication_links:
       Some Traffic:
-        target: 441e289d-73f0-4a00-ae53-687be7287540
+        target: some-other-technical-asset
         description: Some Description
         protocol: https
         authentication: none
@@ -55,10 +68,10 @@ technical_assets:
         readonly: false
         usage: business
         data_assets_sent:
-          - c3976643-942b-4fe1-aebb-a6a0e6879cf6
+          - some-data-asset
         data_assets_received: []
   Some Other Technical Asset:
-    id: 441e289d-73f0-4a00-ae53-687be7287540
+    id: some-other-technical-asset
     description: Some Description
     type: process
     usage: business
@@ -67,6 +80,7 @@ technical_assets:
     justification_out_of_scope: null
     size: component
     technology: web-service-rest
+    tags: []
     internet: false
     machine: virtual
     encryption: none
@@ -77,14 +91,27 @@ technical_assets:
     justification_cia_rating: null
     multitenant: false
     redundant: true
+    custom_developed_parts: false
     data_assets_processed:
-      - c3976643-942b-4fe1-aebb-a6a0e6879cf6
+      - some-data-asset
     data_assets_stored: []
+    data_formats_accepted: null
+    communication_links: {}
 trust_boundaries:
   Some Trust Boundary:
-    id: 406c7be2-5aa7-48d2-aeb6-d105d3510dc5
+    id: some-trust-boundary
     description: Some Description
     type: network-dedicated-hoster
+    tags: []
     technical_assets_inside:
-      - dc9acb35-1218-4007-b777-6affeafa42ee
+      - some-technical-asset
     trust_boundaries_nested: []
+shared_runtimes:
+  Some Shared Runtime:
+    id: some-shared-runtime
+    description: Some Description
+    tags: []
+    technical_assets_running:
+      - some-technical-asset
+      - some-other-technical-asset
+individual_risk_categories: {}

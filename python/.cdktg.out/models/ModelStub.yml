@@ -10,6 +10,7 @@ management_summary_comment: null
 business_criticality: important
 questions: {}
 abuse_cases: {}
+security_requirements: {}
 tags_available:
   - some-tag
   - some-other-tag
@@ -50,9 +51,11 @@ technical_assets:
     justification_cia_rating: null
     multitenant: false
     redundant: true
+    custom_developed_parts: false
     data_assets_processed:
       - some-data-asset
     data_assets_stored: []
+    data_formats_accepted: null
     communication_links:
       Some Traffic:
         target: some-other-technical-asset
@@ -88,9 +91,12 @@ technical_assets:
     justification_cia_rating: null
     multitenant: false
     redundant: true
+    custom_developed_parts: false
     data_assets_processed:
       - some-data-asset
     data_assets_stored: []
+    data_formats_accepted: null
+    communication_links: {}
 trust_boundaries:
   Some Trust Boundary:
     id: some-trust-boundary
@@ -108,3 +114,4 @@ shared_runtimes:
     technical_assets_running:
       - some-technical-asset
       - some-other-technical-asset
+individual_risk_categories: {}
