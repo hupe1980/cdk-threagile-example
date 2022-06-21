@@ -8,7 +8,7 @@
     "model:analyse": "cdktg analyse"
   },
   "dependencies": {
-    "cdktg": "^0.0.18",
+    "cdktg": "^0.0.22",
     "constructs": "^10.1.42"
   },
   "devDependencies": {

@@ -7,6 +7,8 @@ author:
   name: John Doe
   homepage: null
 management_summary_comment: null
+business_overview: null
+technical_overview: null
 business_criticality: important
 questions: {}
 abuse_cases: {}
