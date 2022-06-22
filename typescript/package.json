@@ -5,10 +5,10 @@
     "synth": "cdktg synth threagile.ts",
     "ping": "cdktg ping",
     "model:check": "cdktg check",
-    "model:analyse": "cdktg analyse"
+    "model:analyze": "cdktg analyze"
   },
   "dependencies": {
-    "cdktg": "^0.0.22",
+    "cdktg": "^0.0.24",
     "constructs": "^10.1.42"
   },
   "devDependencies": {
